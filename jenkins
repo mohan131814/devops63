@@ -1,0 +1,16 @@
+pipeline {
+    agent any 
+    stages {
+        stage ("clone") {
+            steps {
+                git "https://github.com/Nazma111/pilpeline1.git"
+            
+            }
+        }
+        stage ("build") {
+            steps {
+                bash build.sh
+            }
+        }
+    }
+}
