@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("clone") {
             steps {
-                git "https://github.com/Nazma111/pilpeline1.git"
+                git "https://github.com/aws-samples/eb-tomcat-snakes.git"
             
             }
         }
